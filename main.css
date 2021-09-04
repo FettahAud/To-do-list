@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+}
+
+body {
+  height: 100vh;
+}
+
+.cont {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #0093e9;
+  background-image: linear-gradient(296deg, #0093e9 20%, #80d0c7 100%);
+}
+
+.cont > div {
+  width: 350px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.55);
+          box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.55);
+}
+
+.cont .box1 {
+  margin-bottom: 80px;
+  margin-right: 40px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont .box1 input {
+  border: 1px solid #dedede;
+  outline: none;
+  padding: 10px 40px 10px 10px;
+}
+
+.cont .box1 button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: white;
+  background-color: #0093e9;
+  cursor: pointer;
+}
+
+.cont .box2 {
+  min-height: 100px;
+  max-height: 100%;
+  padding-bottom: 20px;
+}
+
+.cont .box2 > div:first-of-type {
+  margin-top: 30px;
+}
+
+.cont .box2 .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 20px;
+  position: relative;
+}
+
+.cont .box2 .task .taskDes {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.cont .box2 .task .delete {
+  cursor: pointer;
+  background-color: #80d0c7;
+  padding: 5px 7px;
+}
+
+.cont .box2 .task .delete img {
+  max-width: 19px;
+  color: white;
+}
+
+.cont .box2 .task::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 40px;
+}
+
+.cont .box2 .task input {
+  cursor: pointer;
+  position: absolute;
+}
+
+.cont .box2 .task input:checked ~ .taskDes {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=main.css.map */
